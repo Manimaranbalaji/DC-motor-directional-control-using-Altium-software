@@ -1,11 +1,11 @@
-# DC-motor-directional-control-using-Altium-software
-# Exp-9--Design-a- DC motor direction control-circuit-using-Altium-software-and-generate-the-Gerber-file.
-# AIM:
+
+# Exp-9 Design a DC motor direction control circuit using Altium software and generate the Gerber file.
+## AIM:
 To design the schematic and PCB layout diagram of an DC motor direction control circuit using Altium software.
-# EQUIPMENT REQUIRED:
+## EQUIPMENT REQUIRED:
 ●	Hardware: Personal Computer (PC)<br>
 ●	Software: Altium  <br>
-# PROCEDURE:
+## PROCEDURE:
 •  Open Altium & create a project<br>
 File → New → Project → choose PCB Project. Give it a name and folder.<br>
 •  Add a schematic sheet<br>
@@ -46,25 +46,27 @@ Open generated Gerbers in a Gerber viewer to confirm layers and drill map look c
 Zip the project folder and all output files (Gerbers, Drill, BOM, Pick-and-Place). Add a Readme with board name and revision.<br>
 •  Send to manufacturer<br>
 Upload the zip to your PCB fab and follow their order steps.<br>
-# THEORY:
-## Construction
+## THEORY:
+### Construction
 The circuit is built using two NPN transistors (BC547), two 1 kΩ resistors, two pushbutton switches (FORWARD and REVERSE), a 100 nF capacitor, a DC motor, and a battery as the power source. Each transistor is connected in such a way that one drives the motor in the forward direction while the other drives it in the reverse direction. The push buttons control the base terminal of the transistors through the 1 kΩ resistors, ensuring safe biasing. The capacitor is placed across the two signal lines to help reduce electrical noise and provide smooth switching. The motor terminals are connected such that reversing the current path changes the rotation direction.
-##  Working Principle
+###  Working Principle
 The circuit works based on the ability of the transistors to act as electronic switches. When a small voltage is applied at the base terminal of a BC547 transistor through a push button, it allows a larger current to flow from collector to emitter. This makes the transistor conduct and power the DC motor. By selecting which transistor is activated, the current through the motor can be made to flow in opposite directions, thereby changing its rotation direction.
-## Operation
+### Operation
 When the FORWARD switch (SW6) is pressed, the left BC547 transistor receives base current via the 1 kΩ resistor. This turns it ON, allowing current to pass through the motor in one direction, causing it to rotate forward. When the REVERSE switch (SW5) is pressed instead, the right BC547 transistor is triggered, reversing the direction of current flow through the motor and making it rotate in the opposite direction. The 100 nF capacitor reduces switching noise and protects the components from sudden current spikes during direction changes. Only one switch should be pressed at a time to avoid short-circuit-type conditions.
-##  Applications
+###  Applications
 This circuit is useful for controlling the direction of small DC motors in low-power projects. It is commonly used in school and college robotics projects, motorized toys, conveyor belt models, mechanical arm movements, car wiper simulation models, and mini CNC or automation demonstrations. Because it uses fewer components, it is ideal for beginners learning about transistor-based motor control and the concept of forward–reverse rotation.
 
-# CIRCUIT DIAGRAM:
+## CIRCUIT DIAGRAM:
  
  <img width="795" height="423" alt="image" src="https://github.com/user-attachments/assets/880378eb-9f90-4342-bc1a-1b7333c1ac87" />
 
-# EXPECTED OUTPUT:
-## Schematic diagram:
- 
-## Layout diagram:
- 
-# RESULT:
+## EXPECTED OUTPUT:
+### Schematic diagram:
+ <img width="1280" height="773" alt="image" src="https://github.com/user-attachments/assets/3630eebd-bca1-486f-b9cf-a1583188146a" />
+
+### Layout diagram:
+ <img width="1280" height="698" alt="image" src="https://github.com/user-attachments/assets/4de1c986-7df1-4a41-999d-db64cb6d7068" />
+
+## RESULT:
 Thus, the schematic and PCB layout for the DC motor direction control circuit has been successfully designed using Altium software.
 
